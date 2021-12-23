@@ -12,7 +12,7 @@
   --color-sky: #b6dbff;
   --color-sky-tint: #daedfe;
   --color-sky-light: #eef8ff;
-  --color-blurple: #5522fa;
+  --color-blurple: #9171f7;
   --color-lavender: #d5d2ff;
   --color-lavender-tint: #eae8fe;
   --color-purple: #7700a2;
@@ -117,7 +117,7 @@ a {
 }
 
 .txt-clipping {
-  padding: 0 0.5rem;
+  padding: 0rem 0.5rem;
   vertical-align: middle;
   background-color: #fff;
   background-color: var(--color-sheet);
@@ -127,7 +127,14 @@ a {
   color: #fff;
   font-weight: 600;
   margin: 0 0.3rem;
-  font-family: 'Fredoka One';
+}
+
+.txt-clipping--subtle-2 {
+  background: linear-gradient(
+    135deg,
+    var(--color-salmon) 0%,
+    var(--color-neutral) 100%
+  );
 }
 
 .gradient {

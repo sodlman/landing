@@ -58,12 +58,14 @@ export default function Footer({ background }: { background: string }) {
                               }
                             />
                             <Anchor
-                              label="Github"
-                              href="https://github.com/sodlDAO"
+                              label="Mirror"
+                              href="https://mirror.xyz/sodldao"
                               target="_blank"
                               icon={
-                                <Github
-                                  color={theme.dark ? '#e3e3e3' : 'plain'}
+                                <Image
+                                  src="/mirror.svg"
+                                  width="16px"
+                                  alt="Mirror"
                                 />
                               }
                             />

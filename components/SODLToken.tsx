@@ -12,6 +12,7 @@ export default function SODLToken({ isMobile }: { isMobile: boolean }) {
         align="start"
         justify="around"
         pad={{ vertical: 'large' }}
+        gap={isMobile ? 'large' : ''}
       >
         <Image
           src="/SODL.svg"
@@ -31,31 +32,19 @@ export default function SODLToken({ isMobile }: { isMobile: boolean }) {
             justify="between"
             gap="medium"
           >
-            <Box
-              direction="row"
-              // border={
-              //   isMobile
-              //     ? false
-              //     : { side: 'right', color: 'yellow', size: 'medium' }
-              // }
-            >
+            <Box direction="row">
               <Text style={{ fontSize: 100, lineHeight: '100px' }}>🙁</Text>
               <Image
                 src="/equals.svg"
                 alt="Equals"
                 width="80px"
-                style={{ position: 'relative', left: 40 }}
+                style={{ position: 'relative', left: 30 }}
               />
             </Box>
             <Box
               gap="medium"
               flex="grow"
               pad={{ left: 'large', vertical: 'small' }}
-              // border={
-              //   isMobile
-              //     ? { side: 'left', color: 'yellow', size: 'medium' }
-              //     : false
-              // }
             >
               <Text size="xlarge">
                 I <span className={highlight}>SODL</span>
@@ -71,14 +60,14 @@ export default function SODLToken({ isMobile }: { isMobile: boolean }) {
             pad={{ vertical: 'medium' }}
           >
             <Box
-              style={{ width: !isMobile ? 110 : 220, height: 4 }}
+              style={{ width: !isMobile ? 200 : 220, height: 4 }}
               background="yellow"
             />
             <Heading margin="none" color="red">
               BUT
             </Heading>
             <Box
-              style={{ width: isMobile ? 110 : 220, height: 4 }}
+              style={{ width: isMobile ? 40 : 220, height: 4 }}
               background="yellow"
             />
           </Box>
@@ -94,31 +83,17 @@ export default function SODLToken({ isMobile }: { isMobile: boolean }) {
               direction="row"
               height={isMobile ? '' : '200px'}
               align="center"
-              // border={
-              //   isMobile
-              //     ? false
-              //     : { side: 'right', color: 'yellow', size: 'medium' }
-              // }
             >
               <Text style={{ fontSize: 100, lineHeight: '100px' }}>✌️</Text>
               <Image
                 src="/equals.svg"
                 alt="Equals"
                 width="80px"
-                style={{ position: 'relative', left: 40 }}
+                style={{ position: 'relative', left: 30 }}
               />
             </Box>
 
-            <Box
-              gap="medium"
-              flex="grow"
-              pad={{ left: 'large' }}
-              // border={
-              //   !isMobile
-              //     ? false
-              //     : { side: 'left', color: 'yellow', size: 'medium' }
-              // }
-            >
+            <Box gap="medium" flex="grow" pad={{ left: 'large' }}>
               <Text size="xlarge">
                 It is <span className={highlight}>okay</span>
               </Text>
@@ -136,6 +111,23 @@ export default function SODLToken({ isMobile }: { isMobile: boolean }) {
             </Box>
           </Box>
         </Box>
+      </Box>
+
+      <Box direction="row" justify="center" gap="medium">
+        <Image
+          width="50px"
+          height="50px"
+          src="/coinmarketcap.svg"
+          alt=""
+          style={{ opacity: 0.7 }}
+        />
+        <Image
+          width="50px"
+          height="50px"
+          src="/coingecko.png"
+          alt=""
+          style={{ opacity: 0.7 }}
+        />
       </Box>
     </Box>
   )

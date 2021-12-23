@@ -5,7 +5,7 @@ export default function FAQ() {
     <Box pad={{ vertical: 'medium' }}>
       <Heading textAlign="center">FAQ</Heading>
 
-      <Accordion background="#333">
+      <Accordion background="black" hoverIndicator={false}>
         <AccordionPanel label="Why I can claim if I sodl on Binance?">
           <Box pad="small">
             <Text>
