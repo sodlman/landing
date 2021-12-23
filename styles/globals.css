@@ -1,9 +1,94 @@
+:root {
+  /* colors */
+  --color-white: #fff;
+  --color-black: #222;
+  --color-grey: #777471;
+  --color-stone: #edeae6;
+  --color-stone-tint: #f6f4f2;
+  --color-yellow: #f5d652;
+  --color-canary: #fff5ca;
+  --color-canary-tint: #fffae5;
+  --color-cobalt: #0074e4;
+  --color-sky: #b6dbff;
+  --color-sky-tint: #daedfe;
+  --color-sky-light: #eef8ff;
+  --color-blurple: #5522fa;
+  --color-lavender: #d5d2ff;
+  --color-lavender-tint: #eae8fe;
+  --color-purple: #7700a2;
+  --color-pink: #cb84de;
+  --color-pink-tint: #efdaf5;
+  --color-salmon: #ec8580;
+  --color-peach: #fee5da;
+  --color-peach-tint: #fef2ed;
+  --color-teal: #5ceace;
+  --color-mint: #b3f8eb;
+  --color-mint-tint: #d8f9f0;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-shadow-dark: rgba(0, 0, 0, 0.2);
+
+  /* semantic colors */
+  --color-text: var(--color-black);
+  --color-background: var(--color-stone);
+  --color-sheet: var(--color-white);
+  --color-neutral: var(--color-grey);
+  --color-link: var(--color-blurple);
+  --color-accent: var(--color-teal);
+
+  /* spacing */
+  --space-x-small: 0.25em;
+  --space-small: 0.5em;
+  --space-medium: 1em;
+  --space-large: 2em;
+  --space-x-large: 3em;
+  --space-xx-large: 4em;
+  --space-xxx-large: 6em;
+  --space-navbar: 4em;
+
+  /* font stacks */
+  --font-sans: 'Righteous', 'Source Sans Variable', 'Helvetica Neue', helvetica,
+    arial, sans-serif;
+  --font-mono: monospace;
+
+  /* type sizes */
+  --type-base: calc(1.6em + 0.5vw);
+
+  @media (--viewport-medium) {
+    --type-base: calc(0.9em + 0.9vw);
+  }
+
+  @media (--viewport-large) {
+    --type-base: 2.2em;
+  }
+
+  /* type scales */
+  --type-xxx-small: 55%;
+  --type-xx-small: 65%;
+  --type-x-small: 75%;
+  --type-small: 85%;
+  --type-medium: 100%;
+  --type-large: 125%;
+  --type-x-large: 150%;
+  --type-xx-large: 200%;
+  --type-xxx-large: 275%;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'DM Mono', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html {
+  min-height: 100%;
+}
+
+main {
+  height: unset !important;
+  min-height: unset !important;
+  overflow: unset !important;
 }
 
 a {
@@ -13,4 +98,63 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: 'Secular One', -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+}
+
+/* #__next > div {
+  overflow: unset;
+} */
+
+.txt-clipping--subtle {
+  background: linear-gradient(
+    135deg,
+    var(--color-salmon) 0%,
+    var(--color-blurple) 50%,
+    var(--color-neutral) 100%
+  );
+}
+
+.txt-clipping {
+  padding: 0 0.5rem;
+  vertical-align: middle;
+  background-color: #fff;
+  background-color: var(--color-sheet);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-weight: 600;
+  margin: 0 0.3rem;
+  font-family: 'Fredoka One';
+}
+
+.gradient {
+  display: inline-block;
+  line-height: 1;
+  background-color: #ca4246;
+  font-weight: 800;
+
+  /* Create the gradient. */
+
+  background-image: linear-gradient(
+    135deg,
+    rgba(219, 9, 9, 1) 0%,
+    rgba(65, 45, 226, 1) 50%,
+    rgba(83, 212, 5, 1) 100%
+  );
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Animate the text when loading the element. */
+  /* This animates it on page load and when hovering out. */
+  animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
 }
