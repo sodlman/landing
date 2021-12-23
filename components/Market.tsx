@@ -52,9 +52,13 @@ export default function Market({ isMobile }: { isMobile: boolean }) {
         </Box>
       </Box>
 
-      <Heading level={2} textAlign="center">
+      <Heading level={2} textAlign="center" margin="none">
         Now, you get a chance to prove you{' '}
         <span className="gradient">SODL</span>
+      </Heading>
+      <Heading level={2} textAlign="center" margin="none">
+        and maybe<span className={highlight}> recover</span> some of your
+        <span className={highlight}>losses</span>
       </Heading>
 
       <LinkDown size="100px" />
