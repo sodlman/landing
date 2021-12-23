@@ -4,7 +4,7 @@ export default function SODLToken() {
   const highlight = 'txt-clipping--subtle txt-clipping'
   return (
     <Box>
-      <Heading>
+      <Heading textAlign="center">
         About <span className="gradient">$SODL</span>
       </Heading>
       <Box
@@ -44,9 +44,9 @@ export default function SODLToken() {
           </Box>
 
           <Box direction="row" align="center" gap="medium">
-            <Box style={{ width: 60, height: 3 }} background="yellow" />
+            <Box style={{ width: 60, height: 4 }} background="yellow" />
             <Heading>BUT</Heading>
-            <Box style={{ width: 100, height: 3 }} background="yellow" />
+            <Box style={{ width: 100, height: 4 }} background="yellow" />
           </Box>
 
           <Box

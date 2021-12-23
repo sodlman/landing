@@ -64,9 +64,10 @@ const Layout = ({ title, children, mainWidth, isLoading }: Props) => {
               <Button
                 primary
                 size="large"
-                color={GRADIENT}
+                active
+                // color={GRADIENT}
                 label="Launch dAPP"
-                style={{ color: 'white', border: 0 }}
+                // style={{ color: 'white', border: 0 }}
                 href="https://app.sodl.xyz/"
               />
             </Header>
