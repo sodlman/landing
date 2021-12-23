@@ -1,6 +1,6 @@
 import { Box, Heading, Image, Text } from 'grommet'
 
-export default function SODLToken() {
+export default function SODLToken({ isMobile }: { isMobile: boolean }) {
   const highlight = 'txt-clipping--subtle txt-clipping'
   return (
     <Box>
@@ -8,75 +8,130 @@ export default function SODLToken() {
         About <span className="gradient">$SODL</span>
       </Heading>
       <Box
-        direction="row-reverse"
+        direction={isMobile ? 'column' : 'row-reverse'}
         align="start"
         justify="around"
         pad={{ vertical: 'large' }}
       >
         <Image
           src="/SODL.svg"
-          width="300px"
+          width={isMobile ? '200px' : '300px'}
           style={{
             borderRadius: '50%',
+            margin: '0 auto',
           }}
           alt="SODL Token"
         />
 
         <Box>
           <Box
-            direction="row"
+            direction={isMobile ? 'column' : 'row'}
             fill
-            align="center"
+            align={isMobile ? 'start' : 'center'}
             justify="between"
             gap="medium"
           >
-            <Text style={{ fontSize: 100, lineHeight: '100px' }}>🙁</Text>
             <Box
-              gap="small"
-              flex="grow"
-              border={{ side: 'left', color: 'yellow', size: 'medium' }}
-              pad={{ left: 'medium' }}
+              direction="row"
+              // border={
+              //   isMobile
+              //     ? false
+              //     : { side: 'right', color: 'yellow', size: 'medium' }
+              // }
             >
-              <Text size="xxlarge">
+              <Text style={{ fontSize: 100, lineHeight: '100px' }}>🙁</Text>
+              <Image
+                src="/equals.svg"
+                alt="Equals"
+                width="80px"
+                style={{ position: 'relative', left: 40 }}
+              />
+            </Box>
+            <Box
+              gap="medium"
+              flex="grow"
+              pad={{ left: 'large', vertical: 'small' }}
+              // border={
+              //   isMobile
+              //     ? { side: 'left', color: 'yellow', size: 'medium' }
+              //     : false
+              // }
+            >
+              <Text size="xlarge">
                 I <span className={highlight}>SODL</span>
               </Text>
             </Box>
           </Box>
 
-          <Box direction="row" align="center" gap="medium">
-            <Box style={{ width: 60, height: 4 }} background="yellow" />
-            <Heading>BUT</Heading>
-            <Box style={{ width: 100, height: 4 }} background="yellow" />
+          <Box
+            direction="row"
+            align="center"
+            gap="medium"
+            margin={{ vertical: isMobile ? 'medium' : '' }}
+            pad={{ vertical: 'medium' }}
+          >
+            <Box
+              style={{ width: !isMobile ? 110 : 220, height: 4 }}
+              background="yellow"
+            />
+            <Heading margin="none" color="red">
+              BUT
+            </Heading>
+            <Box
+              style={{ width: isMobile ? 110 : 220, height: 4 }}
+              background="yellow"
+            />
           </Box>
 
           <Box
-            direction="row"
+            direction={isMobile ? 'column' : 'row'}
             fill
-            align="center"
+            align={isMobile ? 'start' : 'center'}
             justify="between"
             gap="medium"
           >
-            <Text style={{ fontSize: 100, lineHeight: '100px' }}>✌️</Text>
+            <Box
+              direction="row"
+              height={isMobile ? '' : '200px'}
+              align="center"
+              // border={
+              //   isMobile
+              //     ? false
+              //     : { side: 'right', color: 'yellow', size: 'medium' }
+              // }
+            >
+              <Text style={{ fontSize: 100, lineHeight: '100px' }}>✌️</Text>
+              <Image
+                src="/equals.svg"
+                alt="Equals"
+                width="80px"
+                style={{ position: 'relative', left: 40 }}
+              />
+            </Box>
 
             <Box
               gap="medium"
               flex="grow"
-              border={{ side: 'left', color: 'yellow', size: 'medium' }}
-              pad={{ left: 'medium' }}
+              pad={{ left: 'large' }}
+              // border={
+              //   !isMobile
+              //     ? false
+              //     : { side: 'left', color: 'yellow', size: 'medium' }
+              // }
             >
-              <Text size="xxlarge">
-                it is <span className={highlight}>okay</span>
+              <Text size="xlarge">
+                It is <span className={highlight}>okay</span>
               </Text>
-              <Text size="xxlarge">
+              <Text size="xlarge">
                 I can
                 <span className={highlight}>move on</span>
               </Text>
-              <Text size="xxlarge">
+              <Text size="xlarge">
                 I love
                 <span className={highlight}>decentralized</span>
               </Text>
-              <Text size="xxlarge">
-                I <span className={highlight}>love</span> cryptocurrency
+              <Text size="xlarge">
+                I love<span className={highlight}>cryptocurrency</span>
               </Text>
             </Box>
           </Box>

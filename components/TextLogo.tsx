@@ -24,7 +24,7 @@ export default function TextLogo() {
             <Text
               weight={700}
               color={color}
-              className="gradient"
+              // className="gradient"
               style={{
                 lineHeight: 1,
                 fontSize: 42,

@@ -12,7 +12,9 @@ import {
   Main,
   dark,
   grommet,
+  Text,
 } from 'grommet'
+import Link from 'next/link'
 import TextLogo from './TextLogo'
 import Footer from './Footer'
 import { GRADIENT } from 'utils/constants'
@@ -50,7 +52,7 @@ const Layout = ({ title, children, mainWidth, isLoading }: Props) => {
             <Header
               direction={isMobile ? 'column' : 'row'}
               pad={{ vertical: 'medium', horizontal: 'large' }}
-              height={isMobile ? '160px' : 'xsmall'}
+              height={isMobile ? '120px' : 'xsmall'}
               style={{ borderBottom: '1px solid #e3e3e3' }}
             >
               <Box
@@ -61,15 +63,19 @@ const Layout = ({ title, children, mainWidth, isLoading }: Props) => {
                 <TextLogo />
               </Box>
 
-              <Button
-                primary
-                size="large"
-                active
-                // color={GRADIENT}
-                label="Launch dAPP"
-                // style={{ color: 'white', border: 0 }}
-                href="https://app.sodl.xyz/"
-              />
+              <Box>
+                <Link href="https://app.sodl.xyz" passHref>
+                  <Box
+                    round="large"
+                    background={GRADIENT}
+                    pad={{ vertical: 'small', horizontal: 'medium' }}
+                  >
+                    <Text size="large" weight="bold">
+                      Launch dAPP
+                    </Text>
+                  </Box>
+                </Link>
+              </Box>
             </Header>
           )
         }}

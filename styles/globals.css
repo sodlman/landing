@@ -123,7 +123,7 @@ a {
   background-color: var(--color-sheet);
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
   color: #fff;
   font-weight: 600;
   margin: 0 0.3rem;
