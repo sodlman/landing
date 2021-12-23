@@ -10,6 +10,7 @@ export default function Market({ isMobile }: { isMobile: boolean }) {
       align="center"
       pad={{ vertical: 'medium' }}
       gap="medium"
+      width="100%"
     >
       <Heading textAlign="center">
         About <span style={{ color: 'green' }}>BULL</span> &{' '}
@@ -19,35 +20,33 @@ export default function Market({ isMobile }: { isMobile: boolean }) {
       <Box
         direction={isMobile ? 'column' : 'row'}
         align="center"
-        justify="around"
+        justify="between"
         gap="medium"
       >
         <Box gap="small">
-          <Text size="large">In the past 2 years</Text>
+          <Text size="large">In the past 2 years,</Text>
           <Text size="large">
-            ETH grows <span className={highlight}>x30</span>
+            ETH grows <span className={highlight}>x30</span>;
           </Text>
           <Text size="large">
-            BTC grows <span className={highlight}>x7</span>
+            BTC grows <span className={highlight}>x7</span>;
           </Text>
           <Text size="large">
-            Did you <span className={highlight}>HODL</span> it,
+            Did you <span className={highlight}>HODL</span> it, or
+            <span className={highlight}>SODL</span> it?
           </Text>
           <Text size="large">
-            or <span className={highlight}>SODL</span> it
-          </Text>
-          <Text size="large">
-            In the dead of night, did you
+            In the dead of night, have you ever
             <span className={highlight}>regret</span>it?
           </Text>
         </Box>
 
         <Box
-          width={isMobile ? '300px' : '500px'}
+          width={isMobile ? '300px' : '400px'}
           height={isMobile ? '300px' : '400px'}
         >
           <Streamgraph
-            width={isMobile ? 300 : 500}
+            width={isMobile ? 300 : 400}
             height={isMobile ? 300 : 400}
           />
         </Box>

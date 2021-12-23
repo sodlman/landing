@@ -15,7 +15,7 @@ export default function Home() {
           const isMobile = size === 'small'
 
           return (
-            <Box direction="column" pad={isMobile ? 'medium' : ''}>
+            <Box direction="column" pad={isMobile ? 'medium' : ''} width="100%">
               <Banner isMobile={isMobile} />
 
               <Market isMobile={isMobile} />
