@@ -24,18 +24,18 @@ export default function Market({ isMobile }: { isMobile: boolean }) {
         gap="medium"
       >
         <Box gap="small">
-          <Text size="large">In the past 2 years,</Text>
-          <Text size="large">
+          <Text size="xlarge">In the past 2 years,</Text>
+          <Text size="xlarge">
             ETH grows <span className={highlight}>x30</span>;
           </Text>
-          <Text size="large">
+          <Text size="xlarge">
             BTC grows <span className={highlight}>x7</span>;
           </Text>
-          <Text size="large">
+          <Text size="xlarge">
             Did you <span className={highlight}>HODL</span> it, or
             <span className={highlight}>SODL</span> it?
           </Text>
-          <Text size="large">
+          <Text size="xlarge">
             In the dead of night, have you ever
             <span className={highlight}>regret</span>it?
           </Text>
