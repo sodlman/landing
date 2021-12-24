@@ -66,6 +66,7 @@ export default function PriceChart() {
           yTickCount: 3,
           showLabels: false,
           legendPosition: chartXkcd.config.positionType.upLeft,
+          backgroundColor: '#81FCED',
         },
       }}
     />

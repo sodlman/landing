@@ -10,6 +10,7 @@ const PriceChart = dynamic(() => import('./PriceChart'), {
 
 export default function Market({ isMobile }: { isMobile: boolean }) {
   const highlight = 'txt-clipping--subtle-2 txt-clipping'
+  const size = isMobile ? '' : 'xlarge'
   return (
     <Box
       direction="column"
@@ -24,26 +25,26 @@ export default function Market({ isMobile }: { isMobile: boolean }) {
       </Heading>
 
       <Box
-        direction={isMobile ? 'column' : 'row'}
-        align="center"
+        direction={isMobile ? 'column-reverse' : 'row'}
+        align={isMobile ? 'start' : 'center'}
         justify="between"
         gap="medium"
         width="100%"
       >
         <Box gap="small">
-          <Text size="xlarge">In the past 2 years,</Text>
-          <Text size="xlarge">
+          <Text size={size}>In the past 2 years,</Text>
+          <Text size={size}>
             ETH grows <span className={highlight}>x30</span>;
           </Text>
-          <Text size="xlarge">
+          <Text size={size}>
             BTC grows <span className={highlight}>x7</span>;
           </Text>
-          <Text size="xlarge">
+          <Text size={size}>
             Did you <span className={highlight}>HODL</span> it, or
             <span className={highlight}>SODL</span> it?
           </Text>
-          <Text size="xlarge">In the dead of night,</Text>
-          <Text size="xlarge">
+          <Text size={size}>In the dead of night,</Text>
+          <Text size={size}>
             have you ever
             <span className={highlight}>regret</span>it?
           </Text>
@@ -65,29 +66,29 @@ export default function Market({ isMobile }: { isMobile: boolean }) {
           <Image src="/pizza.svg" width="200px" alt="pizza" />
         </Box>
         <Box gap="small">
-          <Text size="xlarge">
+          <Text size={size}>
             Do you remember <span className={highlight}>Laszlo Hanyecz</span>?
           </Text>
           <Text
-            size="xlarge"
+            size={size}
             style={{ textDecoration: 'line-through' }}
             color="status-error"
           >
             NO?
           </Text>
-          <Text size="xlarge">What about the guy</Text>
-          <Text size="xlarge">
+          <Text size={size}>What about the guy</Text>
+          <Text size={size}>
             who purchased{' '}
             <span className={highlight}>2 pizzas for 10,000 BTC</span> in 2010?
           </Text>
-          <Text size="xlarge">
+          <Text size={size}>
             Did he <span className={highlight}>regret</span>?
           </Text>
         </Box>
       </Box>
 
       <Box background="dark-1" pad="medium" gap="medium">
-        <Text size="xlarge" style={{ lineHeight: 1.8 }}>
+        <Text size={size} style={{ lineHeight: 1.8 }}>
           “I've never seen Bitcoin as an investment, and while it's easy to look
           back and say ‘I could have been a millionaire,’ I think it's{' '}
           <span className={highlight}>
@@ -104,20 +105,20 @@ export default function Market({ isMobile }: { isMobile: boolean }) {
         </Text>
         <Box direction="row" align="center" justify="end" gap="small">
           <Box width="150px" height="2px" background="white" />
-          <Text size="xlarge">Laszlo Hanyecz</Text>
+          <Text size={size}>Laszlo Hanyecz</Text>
         </Box>
       </Box>
 
       <Heading level={2} textAlign="center" margin="none">
         So, what are you complaining about?
       </Heading>
-      {/* <Text size="xlarge"></Text> */}
+      {/* <Text size={size}></Text> */}
 
-      <Text size="xlarge">
+      <Text size={size}>
         Now, you get a chance to prove you{' '}
         <span className="gradient">SODL</span>
       </Text>
-      <Text size="xlarge">
+      <Text size={size}>
         and maybe<span className={highlight}> recover</span> some of your
         <span className={highlight}>losses</span>
       </Text>

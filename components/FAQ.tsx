@@ -53,7 +53,7 @@ export default function FAQ() {
             <Box pad="medium">
               <Text>
                 Nothing, for now. Later you may use it for a lot things, see
-                below.
+                RoadMap.
               </Text>
             </Box>
           </AccordionPanel>

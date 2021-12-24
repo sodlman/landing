@@ -9,22 +9,24 @@ import { Box, Heading, Image, ResponsiveContext, Text } from 'grommet'
 
 export default function Home() {
   return (
-    <Layout title="Home" mainWidth={1000}>
+    <Layout title="Home" mainWidth="100%">
       <ResponsiveContext.Consumer>
         {(size) => {
           const isMobile = size === 'small'
 
           return (
-            <Box direction="column" width="100%">
+            <Box direction="column" align="center" width="100%">
               <Banner isMobile={isMobile} />
 
-              <Market isMobile={isMobile} />
+              <Box width={isMobile ? '100%' : '1000px'}>
+                <Market isMobile={isMobile} />
 
-              <SODLToken isMobile={isMobile} />
+                <SODLToken isMobile={isMobile} />
 
-              <RoadMap />
+                <RoadMap isMobile={isMobile} />
 
-              <FAQ />
+                <FAQ />
+              </Box>
             </Box>
           )
         }}

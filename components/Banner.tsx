@@ -11,41 +11,53 @@ export default function Banner({ isMobile }: { isMobile: boolean }) {
     color: '#ccc',
   }
   return (
-    <Box pad={{ vertical: 'medium' }}>
-      <Box direction="row" gap="small" align="center" pad="medium">
-        <Text style={headingStyle}>The</Text>
-        <DAO width={isMobile ? 50 : 80} />
+    <Box pad={{ vertical: 'medium' }} width="100%">
+      <Box pad={{ left: isMobile ? 'small' : '100px' }}>
+        <Box direction="row" gap="small" align="center" pad="medium">
+          <Text style={headingStyle}>The</Text>
+          <DAO width={isMobile ? 50 : 80} />
+        </Box>
+        <Box pad="medium">
+          <Text style={headingStyle}>
+            For <span className="gradient">SODL</span>
+            ers
+          </Text>
+        </Box>
       </Box>
-      <Box pad="medium">
-        <Text style={headingStyle}>
-          For <span className="gradient">SODL</span>
-          ers
-        </Text>
-      </Box>
-      <Box height="400px" align="center" justify="center" gap="medium">
+      <Box
+        height={isMobile ? '200px' : '400px'}
+        align="center"
+        justify="center"
+        gap="medium"
+        style={{ position: 'relative' }}
+      >
+        <Box
+          align="center"
+          justify="center"
+          width="100%"
+          height="100%"
+          background={'url(/textile.svg)'}
+          style={{
+            backgroundSize: isMobile ? 'cover' : 'contain',
+            opacity: 0.3,
+            position: 'absolute',
+            left: 0,
+            top: 0,
+          }}
+        ></Box>
         <Link href="https://app.sodl.xyz" passHref>
           <Box
             round="small"
             background={GRADIENT}
             border={{ side: 'all', size: 'small', color: '#e3e3e3' }}
             pad={{ vertical: 'small', horizontal: 'large' }}
+            style={{ zIndex: 1 }}
           >
             <Text size="xlarge" weight="bold">
               Launch dAPP
             </Text>
           </Box>
         </Link>
-        <Box
-          align="center"
-          justify="center"
-          width="100%"
-          height={isMobile ? '100px' : '200px'}
-          background={'url(/textile.svg)'}
-          style={{
-            backgroundSize: isMobile ? 'cover' : 'contain',
-            opacity: 0.3,
-          }}
-        ></Box>
         {/* <Image src="/textile.svg" width="100%" alt="" /> */}
       </Box>
     </Box>

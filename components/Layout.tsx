@@ -49,7 +49,7 @@ const Layout = ({ title, children, mainWidth, isLoading }: Props) => {
             <Header
               direction={isMobile ? 'column' : 'row'}
               pad={{ vertical: 'medium', horizontal: 'large' }}
-              height={'xsmall'}
+              height={isMobile ? '80px' : 'xsmall'}
               style={{ borderBottom: '1px solid #e3e3e3' }}
             >
               <Box

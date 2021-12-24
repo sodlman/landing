@@ -64,7 +64,7 @@ export default function Footer({ background }: { background: string }) {
                               icon={
                                 <Image
                                   src="/mirror.svg"
-                                  width="16px"
+                                  width="24px"
                                   alt="Mirror"
                                 />
                               }
