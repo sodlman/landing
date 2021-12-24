@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Box, Heading, Image, Text } from 'grommet'
 import { LinkDown } from 'grommet-icons'
 import dynamic from 'next/dynamic'
@@ -63,31 +64,47 @@ export default function Market({ isMobile }: { isMobile: boolean }) {
         <Box>
           <Image src="/pizza.svg" width="200px" alt="pizza" />
         </Box>
-        <Box>
-          <Text size="xlarge">Do you remember Laszlo Hanyecz?</Text>
-          <Text size="xlarge">NO?</Text>
-          <Text size="xlarge">Let me give you a clue:</Text>
-          <Text size="xlarge">Do you remember the guy</Text>
+        <Box gap="small">
+          <Text size="xlarge">
+            Do you remember <span className={highlight}>Laszlo Hanyecz</span>?
+          </Text>
+          <Text
+            size="xlarge"
+            style={{ textDecoration: 'line-through' }}
+            color="status-error"
+          >
+            NO?
+          </Text>
+          <Text size="xlarge">What about the guy</Text>
           <Text size="xlarge">
             who purchased{' '}
             <span className={highlight}>2 pizzas for 10,000 BTC</span> in 2010?
           </Text>
-          <Text size="xlarge">Did he regret?</Text>
+          <Text size="xlarge">
+            Did he <span className={highlight}>regret</span>?
+          </Text>
         </Box>
       </Box>
 
       <Box background="dark-1" pad="medium" gap="medium">
-        <Text size="xlarge">
-          {`“I've never seen Bitcoin as an investment, and while it's easy to look
-          back and say ‘I could have been a millionaire,’ I think it's more
-          important to look at the mindset I had during the pizza transaction,
-          not being that of acquiring an investment, but of making use of a form
-          of currency. If I was looking to hoard coins, I very likely wouldn't
-          have been in the right place at the right time.”`}
+        <Text size="xlarge" style={{ lineHeight: 1.8 }}>
+          “I've never seen Bitcoin as an investment, and while it's easy to look
+          back and say ‘I could have been a millionaire,’ I think it's{' '}
+          <span className={highlight}>
+            more important to look at the mindset
+          </span>{' '}
+          I had during the pizza transaction, not being that of acquiring an
+          investment, but of{' '}
+          <span className={highlight}>making use of a form of currency</span>.
+          If I was looking to hoard coins, I very likely{' '}
+          <span className={highlight}>
+            wouldn't have been in the right place at the right time
+          </span>
+          .”
         </Text>
         <Box direction="row" align="center" justify="end" gap="small">
-          <Box width="100px" height="2px" background="white" />
-          <Text>Laszlo Hanyecz</Text>
+          <Box width="150px" height="2px" background="white" />
+          <Text size="xlarge">Laszlo Hanyecz</Text>
         </Box>
       </Box>
 

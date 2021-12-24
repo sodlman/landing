@@ -165,3 +165,9 @@ a {
   /* This animates it on page load and when hovering out. */
   animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
 }
+
+#faq-list button {
+  background: #111 !important;
+  color: white;
+  border: 0;
+}
