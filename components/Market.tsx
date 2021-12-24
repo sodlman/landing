@@ -118,7 +118,7 @@ export default function Market({ isMobile }: { isMobile: boolean }) {
         Now, you get a chance to prove you{' '}
         <span className="gradient">SODL</span>
       </Text>
-      <Text size={size}>
+      <Text size={size} style={{ lineHeight: isMobile ? 2 : 1.2 }}>
         and maybe<span className={highlight}> recover</span> some of your
         <span className={highlight}>losses</span>
       </Text>

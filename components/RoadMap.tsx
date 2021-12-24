@@ -77,7 +77,7 @@ export default function RoadMap({ isMobile }: { isMobile: boolean }) {
               style={{ borderRadius: '50%' }}
               align="center"
               justify="center"
-              background="accent-1"
+              background="accent-4"
               pad="small"
             >
               <Launch size="large" />
@@ -125,7 +125,7 @@ export default function RoadMap({ isMobile }: { isMobile: boolean }) {
               style={{ borderRadius: '50%' }}
               align="center"
               justify="center"
-              background="accent-4"
+              background="accent-1"
               pad="small"
             >
               <Image src="/sidechain.svg" width="60px" alt="side chain" />
