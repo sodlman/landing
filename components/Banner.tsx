@@ -5,7 +5,7 @@ import { GRADIENT } from 'utils/constants'
 
 export default function Banner({ isMobile }: { isMobile: boolean }) {
   const headingStyle = {
-    fontSize: isMobile ? 60 : 100,
+    fontSize: isMobile ? 50 : 100,
     lineHeight: 1.2,
     fontWeight: 800,
     color: '#ccc',
@@ -13,8 +13,8 @@ export default function Banner({ isMobile }: { isMobile: boolean }) {
   return (
     <Box pad={{ vertical: 'medium' }} width="100%">
       <Box pad={{ left: isMobile ? 'small' : '100px' }}>
-        <Box direction="row" gap="small" align="center" pad="medium">
-          <Text style={headingStyle}>The</Text>
+        <Box direction="row" gap="medium" align="end" pad="medium">
+          <Text style={{ ...headingStyle, lineHeight: 0.7 }}>The</Text>
           <DAO width={isMobile ? 50 : 80} />
         </Box>
         <Box pad="medium">
