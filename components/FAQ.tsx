@@ -2,7 +2,7 @@ import { Accordion, AccordionPanel, Box, Heading, Text } from 'grommet'
 
 export default function FAQ() {
   return (
-    <Box pad={{ vertical: 'medium' }}>
+    <Box pad="medium">
       <Heading textAlign="center">FAQ</Heading>
 
       <Accordion background="black" hoverIndicator={false}>

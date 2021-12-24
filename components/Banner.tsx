@@ -12,14 +12,16 @@ export default function Banner({ isMobile }: { isMobile: boolean }) {
   }
   return (
     <Box pad={{ vertical: 'medium' }}>
-      <Box direction="row" gap="small" align="center">
+      <Box direction="row" gap="small" align="center" pad="medium">
         <Text style={headingStyle}>The</Text>
         <DAO width={isMobile ? 50 : 80} />
       </Box>
-      <Text style={headingStyle}>
-        For <span className="gradient">SODL</span>
-        ers
-      </Text>
+      <Box pad="medium">
+        <Text style={headingStyle}>
+          For <span className="gradient">SODL</span>
+          ers
+        </Text>
+      </Box>
       <Box height="400px" align="center" justify="center" gap="medium">
         <Link href="https://app.sodl.xyz" passHref>
           <Box
@@ -39,7 +41,10 @@ export default function Banner({ isMobile }: { isMobile: boolean }) {
           width="100%"
           height={isMobile ? '100px' : '200px'}
           background={'url(/textile.svg)'}
-          style={{ backgroundSize: 'contain', opacity: 0.3 }}
+          style={{
+            backgroundSize: isMobile ? 'cover' : 'contain',
+            opacity: 0.3,
+          }}
         ></Box>
         {/* <Image src="/textile.svg" width="100%" alt="" /> */}
       </Box>

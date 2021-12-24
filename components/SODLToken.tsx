@@ -3,7 +3,7 @@ import { Box, Heading, Image, Text } from 'grommet'
 export default function SODLToken({ isMobile }: { isMobile: boolean }) {
   const highlight = 'txt-clipping--subtle txt-clipping'
   return (
-    <Box>
+    <Box pad="medium">
       <Heading textAlign="center">
         About <span className="gradient">$SODL</span>
       </Heading>
