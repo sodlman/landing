@@ -122,9 +122,6 @@ export default function Market({ isMobile }: { isMobile: boolean }) {
         and maybe<span className={highlight}> recover</span> some of your
         <span className={highlight}>losses</span>
       </Text>
-      {/* <Heading level={2} textAlign="center" margin="none">
-        
-      </Heading> */}
 
       <LinkDown size="100px" />
     </Box>
