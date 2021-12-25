@@ -50,6 +50,12 @@ export default function SODLToken({ isMobile }: { isMobile: boolean }) {
               <Text size={size}>
                 I <span className={highlight}>SODL</span>
               </Text>
+              <Text size={size}>
+                I got a <span className={highlight}>rug pull</span>
+              </Text>
+              <Text size={size}>
+                The project <span className={highlight}>hacked</span>
+              </Text>
             </Box>
           </Box>
 

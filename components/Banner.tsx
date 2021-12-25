@@ -25,7 +25,7 @@ export default function Banner({ isMobile }: { isMobile: boolean }) {
         </Box>
       </Box>
       <Box
-        height={isMobile ? '200px' : '400px'}
+        height={isMobile ? '400px' : '400px'}
         align="center"
         justify="center"
         gap="medium"
@@ -38,7 +38,7 @@ export default function Banner({ isMobile }: { isMobile: boolean }) {
           height="100%"
           background={'url(/textile.svg)'}
           style={{
-            backgroundSize: isMobile ? 'cover' : 'contain',
+            backgroundSize: isMobile ? '900px 900px' : 'contain',
             opacity: 0.3,
             position: 'absolute',
             left: 0,

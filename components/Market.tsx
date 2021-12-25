@@ -6,7 +6,6 @@ import dynamic from 'next/dynamic'
 const PriceChart = dynamic(() => import('./PriceChart'), {
   ssr: false,
 })
-// import PriceChart from './PriceChart'
 
 export default function Market({ isMobile }: { isMobile: boolean }) {
   const highlight = 'txt-clipping--subtle-2 txt-clipping'
