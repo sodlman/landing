@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Link from 'next/link'
 import { Box, Button, Text, Image } from 'grommet'
 import DAO from './DAO'
@@ -21,6 +22,11 @@ export default function Banner({ isMobile }: { isMobile: boolean }) {
           <Text style={headingStyle}>
             For <span className="gradient">SODL</span>
             ers
+          </Text>
+        </Box>
+        <Box pad="medium">
+          <Text style={{ ...headingStyle, fontSize: isMobile ? 30 : 50 }}>
+            Don't buy it, claim it
           </Text>
         </Box>
       </Box>
