@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { Anchor, Box, Heading, Text } from 'grommet'
 import dynamic from 'next/dynamic'
 import { APP_HOST } from 'utils/constants'

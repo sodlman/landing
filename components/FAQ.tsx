@@ -33,7 +33,7 @@ export default function FAQ() {
         }}
       >
         <Accordion id="faq-list" background="black" hoverIndicator={false}>
-          <AccordionPanel label="Why I can claim if I sodl on Binance?">
+          <AccordionPanel label="Why can't I claim if I sodl on Binance?">
             <Box pad="small">
               <Text>
                 When you buy or sell cryptocurrency on Binance, the transactions

@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { Box, Heading, Image, Text } from 'grommet'
 import { LinkDown } from 'grommet-icons'
 import dynamic from 'next/dynamic'

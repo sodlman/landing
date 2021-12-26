@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import Link from 'next/link'
 import { Box, Button, Text, Image } from 'grommet'
 import DAO from './DAO'
