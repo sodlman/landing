@@ -1,8 +1,9 @@
 import axios from 'axios'
 import dayjs from 'dayjs'
+import { APP_HOST } from './constants'
 
 export function getPrice(address: string, timestamp: number) {
-  const url = `https://app.sodl.xyz/api/price?address=${address}&from=${dayjs(
+  const url = `${APP_HOST}/api/price?address=${address}&from=${dayjs(
     timestamp
   ).format('YYYY-MM-DD')}`
 

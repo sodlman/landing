@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-sync-scripts */
 /* eslint-disable @next/next/google-font-display */
 /* eslint-disable @next/next/no-page-custom-font */
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Head from 'next/head'
 import {
   Box,
@@ -11,10 +11,12 @@ import {
   Main,
   dark,
   Text,
+  Anchor,
 } from 'grommet'
 import Link from 'next/link'
 import TextLogo from './TextLogo'
 import Footer from './Footer'
+import { APP_HOST } from 'utils/constants'
 
 interface Props {
   title: string
@@ -49,7 +51,7 @@ const Layout = ({ title, children, mainWidth, isLoading }: Props) => {
             <Header
               direction={isMobile ? 'column' : 'row'}
               pad={{ vertical: 'medium', horizontal: 'large' }}
-              height={isMobile ? '80px' : 'xsmall'}
+              height={isMobile ? '100px' : 'xsmall'}
               style={{ borderBottom: '1px solid #e3e3e3' }}
             >
               <Box
@@ -58,6 +60,15 @@ const Layout = ({ title, children, mainWidth, isLoading }: Props) => {
                 gap={isMobile ? 'small' : 'medium'}
               >
                 <TextLogo />
+                <Box
+                  direction="row"
+                  gap={isMobile ? 'large' : 'medium'}
+                  pad={{ top: 'xsmall' }}
+                >
+                  <Anchor label="Pair" href={`${APP_HOST}/pair`} />
+                  <Anchor label="Mint" href={`${APP_HOST}/mint`} />
+                  <Anchor label="Vote" href={`${APP_HOST}/vote`} />
+                </Box>
               </Box>
 
               {!isMobile && (
