@@ -14,24 +14,24 @@ export default function Banner({ isMobile }: { isMobile: boolean }) {
   return (
     <Box pad={{ vertical: 'medium' }} width="100%">
       <Box pad={{ left: isMobile ? 'small' : '100px' }}>
-        <Box direction="row" gap="medium" align="end" pad="medium">
+        <Box direction="row" gap="medium" align="end" pad="small">
           <Text style={{ ...headingStyle, lineHeight: 0.7 }}>The</Text>
           <DAO width={isMobile ? 50 : 80} />
         </Box>
-        <Box pad="medium">
+        <Box pad="small">
           <Text style={headingStyle}>
             For <span className="gradient">SODL</span>
             ers
           </Text>
         </Box>
-        <Box pad="medium">
+        <Box pad="small">
           <Text style={{ ...headingStyle, fontSize: isMobile ? 30 : 50 }}>
             Don't buy it, claim it
           </Text>
         </Box>
       </Box>
       <Box
-        height={isMobile ? '400px' : '400px'}
+        height={isMobile ? '300px' : '400px'}
         align="center"
         justify="center"
         gap="medium"
@@ -42,15 +42,25 @@ export default function Banner({ isMobile }: { isMobile: boolean }) {
           justify="center"
           width="100%"
           height="100%"
-          background={'url(/textile.svg)'}
           style={{
-            backgroundSize: isMobile ? '900px 900px' : 'contain',
-            opacity: 0.3,
+            opacity: 0.8,
             position: 'absolute',
             left: 0,
             top: 0,
           }}
-        ></Box>
+        >
+          <div
+            dangerouslySetInnerHTML={{
+              __html: `
+            <lottie-player src="/banner.json"  background="transparent"  speed="1"  style="width: ${
+              isMobile ? 350 : '100%'
+            }px; height: ${
+                isMobile ? 350 : 400
+              }px;"  loop  autoplay></lottie-player>
+          `,
+            }}
+          ></div>
+        </Box>
         <Link href="https://app.sodl.xyz" passHref>
           <Box
             round="small"
