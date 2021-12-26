@@ -5,6 +5,7 @@ import Layout from 'components/Layout'
 import Market from 'components/Market'
 import RoadMap from 'components/RoadMap'
 import SODLToken from 'components/SODLToken'
+import Tokenecomics from 'components/Tokenecomics'
 import { Box, Heading, Image, ResponsiveContext, Text } from 'grommet'
 
 export default function Home() {
@@ -22,6 +23,8 @@ export default function Home() {
                 <Market isMobile={isMobile} />
 
                 <SODLToken isMobile={isMobile} />
+
+                <Tokenecomics isMobile={isMobile} />
 
                 <RoadMap isMobile={isMobile} />
 
