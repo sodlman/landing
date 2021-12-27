@@ -38,7 +38,7 @@ export default function FAQ() {
               <Text>
                 When you buy or sell cryptocurrency on Binance, the transactions
                 are created in Binance database rather than Blockchain, which is
-                the different between DEX(Decentralized Exchange) and
+                the difference between DEX(Decentralized Exchange) and
                 CEX(Centralized Exchange)
               </Text>
             </Box>

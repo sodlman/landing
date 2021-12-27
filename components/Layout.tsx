@@ -65,7 +65,7 @@ const Layout = ({ title, children, mainWidth, isLoading }: Props) => {
                   gap={isMobile ? 'large' : 'medium'}
                   pad={{ top: 'xsmall' }}
                 >
-                  <Anchor label="Pair" href={`${APP_HOST}/pair`} />
+                  <Anchor label="Token" href={`${APP_HOST}/token`} />
                   <Anchor label="Mint" href={`${APP_HOST}/mint`} />
                   <Anchor label="Vote" href={`${APP_HOST}/vote`} />
                 </Box>
