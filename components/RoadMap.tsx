@@ -22,18 +22,8 @@ export default function RoadMap({ isMobile }: { isMobile: boolean }) {
       color: 'neutral-1',
       thickness: 'xsmall',
       type,
-      toTarget: 'vote',
-      fromTarget: 'launch',
-      round: true,
-    },
-    {
-      id: '2',
-      anchor,
-      color: 'neutral-1',
-      thickness: 'xsmall',
-      type,
       toTarget: 'nft',
-      fromTarget: 'vote',
+      fromTarget: 'launch',
       round: true,
     },
     {
@@ -83,22 +73,6 @@ export default function RoadMap({ isMobile }: { isMobile: boolean }) {
               <Launch size="large" />
               <Text>Launch</Text>
               <Text size="small">2022-1-1</Text>
-            </Box>
-          </Box>
-          <Box align="center">
-            <Box
-              id="vote"
-              width="150px"
-              height="150px"
-              style={{ borderRadius: '50%' }}
-              align="center"
-              justify="center"
-              background="accent-2"
-              pad="small"
-            >
-              <Like size="large" />
-              <Text>Vote for pairs</Text>
-              <Text size="small">2022-Q1</Text>
             </Box>
           </Box>
           <Box align="center">
