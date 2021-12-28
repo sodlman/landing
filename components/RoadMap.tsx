@@ -88,7 +88,7 @@ export default function RoadMap({ isMobile }: { isMobile: boolean }) {
             >
               <Image src="/sidechain.svg" width="60px" alt="side chain" />
               <Text>BSC/MATIC...</Text>
-              <Text size="small">2022-Q2</Text>
+              <Text size="small">2022-Q1</Text>
             </Box>
           </Box>
           <Box align="center">
@@ -104,7 +104,7 @@ export default function RoadMap({ isMobile }: { isMobile: boolean }) {
             >
               <Image src="/nft.png" width="60px" alt="NFT" />
               <Text>NFT</Text>
-              <Text size="small">2022-Q1</Text>
+              <Text size="small">2022-Q2</Text>
             </Box>
           </Box>
           <Box align="center">
