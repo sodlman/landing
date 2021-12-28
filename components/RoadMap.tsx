@@ -22,7 +22,7 @@ export default function RoadMap({ isMobile }: { isMobile: boolean }) {
       color: 'neutral-1',
       thickness: 'xsmall',
       type,
-      toTarget: 'nft',
+      toTarget: 'sidechain',
       fromTarget: 'launch',
       round: true,
     },
@@ -32,8 +32,8 @@ export default function RoadMap({ isMobile }: { isMobile: boolean }) {
       color: 'neutral-1',
       thickness: 'xsmall',
       type,
-      toTarget: 'sidechain',
-      fromTarget: 'nft',
+      toTarget: 'nft',
+      fromTarget: 'sidechain',
       round: true,
     },
     {
@@ -43,7 +43,7 @@ export default function RoadMap({ isMobile }: { isMobile: boolean }) {
       thickness: 'xsmall',
       type,
       toTarget: 'layer2',
-      fromTarget: 'sidechain',
+      fromTarget: 'nft',
       round: true,
     },
   ]
@@ -77,22 +77,6 @@ export default function RoadMap({ isMobile }: { isMobile: boolean }) {
           </Box>
           <Box align="center">
             <Box
-              id="nft"
-              width="150px"
-              height="150px"
-              style={{ borderRadius: '50%' }}
-              align="center"
-              justify="center"
-              background="accent-3"
-              pad="small"
-            >
-              <Image src="/nft.png" width="60px" alt="NFT" />
-              <Text>NFT</Text>
-              <Text size="small">2022-Q1</Text>
-            </Box>
-          </Box>
-          <Box align="center">
-            <Box
               id="sidechain"
               width="150px"
               height="150px"
@@ -105,6 +89,22 @@ export default function RoadMap({ isMobile }: { isMobile: boolean }) {
               <Image src="/sidechain.svg" width="60px" alt="side chain" />
               <Text>BSC/MATIC...</Text>
               <Text size="small">2022-Q2</Text>
+            </Box>
+          </Box>
+          <Box align="center">
+            <Box
+              id="nft"
+              width="150px"
+              height="150px"
+              style={{ borderRadius: '50%' }}
+              align="center"
+              justify="center"
+              background="accent-3"
+              pad="small"
+            >
+              <Image src="/nft.png" width="60px" alt="NFT" />
+              <Text>NFT</Text>
+              <Text size="small">2022-Q1</Text>
             </Box>
           </Box>
           <Box align="center">
