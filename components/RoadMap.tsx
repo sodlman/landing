@@ -1,7 +1,6 @@
 import {
   Box,
   Diagram,
-  DiagramAnimationType,
   DiagramConnectionAnchor,
   DiagramConnectionType,
   Heading,
@@ -9,7 +8,8 @@ import {
   Stack,
   Text,
 } from 'grommet'
-import { Launch, Like } from 'grommet-icons'
+import { Launch } from 'grommet-icons'
+import Link from 'next/link'
 
 export default function RoadMap({ isMobile }: { isMobile: boolean }) {
   const anchor: DiagramConnectionAnchor = isMobile ? 'vertical' : 'horizontal'
@@ -50,7 +50,9 @@ export default function RoadMap({ isMobile }: { isMobile: boolean }) {
 
   return (
     <Box pad={{ vertical: 'small' }}>
-      <Heading textAlign="center">RoadMap</Heading>
+      <a id="roadmap">
+        <Heading textAlign="center">RoadMap</Heading>
+      </a>
       <Stack>
         <Box
           fill
