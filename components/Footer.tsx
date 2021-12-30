@@ -45,7 +45,7 @@ export default function Footer({ background }: { background: string }) {
                               target="_blank"
                               icon={<Twitter color="plain" />}
                             />
-                            {/* <Anchor
+                            <Anchor
                               label="Discord"
                               href="https://discord.gg/28kzMnjreN"
                               target="_blank"
@@ -56,7 +56,7 @@ export default function Footer({ background }: { background: string }) {
                                   alt="Discord"
                                 />
                               }
-                            /> */}
+                            />
                             <Anchor
                               label="Mirror"
                               href="https://mirror.xyz/sodldao"
