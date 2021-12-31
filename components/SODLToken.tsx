@@ -1,4 +1,4 @@
-import { Box, Heading, Image, Text } from 'grommet'
+import { Anchor, Box, Heading, Image, Text } from 'grommet'
 
 export default function SODLToken({ isMobile }: { isMobile: boolean }) {
   const highlight = 'txt-clipping--subtle txt-clipping'
@@ -118,6 +118,22 @@ export default function SODLToken({ isMobile }: { isMobile: boolean }) {
             </Box>
           </Box>
         </Box>
+      </Box>
+
+      <Box
+        direction={isMobile ? 'column' : 'row'}
+        justify="center"
+        align={isMobile ? 'start' : 'center'}
+        gap="small"
+        pad="small"
+      >
+        <Text>$SODL address</Text>
+        <Anchor
+          label="0xfEfbf538C853e92F1c448F6FDa8AC5C354844F69"
+          href="https://etherscan.io/token/0xfEfbf538C853e92F1c448F6FDa8AC5C354844F69"
+          target="_blank"
+          style={{ wordBreak: 'break-all' }}
+        />
       </Box>
 
       <Box direction="row" justify="center" gap="medium">

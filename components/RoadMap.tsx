@@ -74,7 +74,7 @@ export default function RoadMap({ isMobile }: { isMobile: boolean }) {
             >
               <Launch size="large" />
               <Text>Launch</Text>
-              <Text size="small">2022-1-1</Text>
+              <Text size="small">2021-12-31</Text>
             </Box>
           </Box>
           <Box align="center">
