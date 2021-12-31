@@ -59,7 +59,7 @@ export default function Footer({ background }: { background: string }) {
                             />
                             <Anchor
                               label="Mirror"
-                              href="https://mirror.xyz/sodldao"
+                              href="https://mirror.xyz/0xc8399CA553E74894c211B55a85AC9E16D8a2751e"
                               target="_blank"
                               icon={
                                 <Image
